@@ -1,0 +1,91 @@
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@import url('http://fonts.cdnfonts.com/css/hanken');
+@import url('http://fonts.cdnfonts.com/css/alire');
+
+body {
+    margin: 0;
+    /*font-family: 'Alire', sans-serif;*/
+    font-family: 'Hanken', sans-serif;
+    background-color: #fcefe5;
+}
+
+.topnav {
+    background-color: #c49b99;
+    text-align: center;
+    position: relative;
+    height: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.2em;
+}
+
+.topnav a {
+    font-family: 'Alire', sans-serif;
+    color: #fcefe5;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1.5em;
+}
+
+.topnav a:hover {
+    color: #fff;
+}
+
+.navframe {
+    position: relative;
+    height: 4.6em;
+    border-top: 4px dotted white;
+    border-bottom: 4px dotted white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.navleft {
+    float: left;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.navcenter {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 8em;
+    border-radius: 50%;
+    margin-top: -3em;
+}
+
+.logo:hover {
+    height: 8.5em;
+}
+
+.navright {
+    float: right;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.topnav .menuicon {
+    display: none;
+}
+
+main {
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #fff;
+    height: 100em;
+}
