@@ -17,31 +17,50 @@ body {
     background-color: #fcefe5;
 }
 
+.navbar {
+    background-color: #fcefe5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10em;
+}
+
 .topnav {
     background-color: #c49b99;
     text-align: center;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     padding-top: 0.2em;
 }
 
-.topnav a {
+.navframe a {
     font-family: 'Alire', sans-serif;
     color: #fcefe5;
     text-align: center;
-    display: inline-block;
+    /*display: inline-block;*/
     text-decoration: none;
-    margin-top: 1.5em;
+    margin-top: 20px;
 }
 
 .topnav a:hover {
     color: #fff;
 }
 
+.icon {
+    display: none;
+}
+
+#icon {
+    margin-top: 15px;
+}
+
 .navframe {
-    position: relative;
+    position: fixed;
+    width: 100%;
     height: 4.6em;
     border-top: 4px dotted white;
     border-bottom: 4px dotted white;
@@ -64,13 +83,13 @@ body {
 }
 
 .logo {
-    height: 8em;
+    height: 10em;
     border-radius: 50%;
-    margin-top: -3em;
+    margin-top: -2em;
 }
 
 .logo:hover {
-    height: 8.5em;
+    height: 10.5em;
 }
 
 .navright {
@@ -79,13 +98,59 @@ body {
     margin-right: 3em;
 }
 
-.topnav .menuicon {
-    display: none;
+.mobilenav {
+    height: 0%;
+    width: 88%;
+    position: fixed;
+    top: 23%;
+    left: 6%;
+    background-color: #c49b99;
+    overflow-y: hidden;
+    transition: 0.5s;
+    border-radius: 10%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.mobilenav a {
+    color: white;
+    display: inherit;
 }
 
 main {
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 12em;
+    margin-bottom: 4em;
     background-color: #fff;
     height: 100em;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .navframe {
+        padding-left: 0;
+        padding-right: 10%;
+    }
+    
+    .navleft, .navright {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+        float: right;
+        font-size: 30px;
+    }
+    
+    .mobilenav {
+        display: grid;
+    }
+    
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
